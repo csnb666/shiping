@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑白视频播放页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .video-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+            border: 1px solid #000000;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border: none;
+            display: block;
+        }
+        .video-title {
+            padding: 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #000000;
+            background-color: #f0f0f0;
+        }
+        .download-btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 8px 16px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .download-btn:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第一个视频 -->
+    <div class="video-container">
+        <div class="video-title">视频 1：1.mp4</div>
+        <video controls>
+            <source src="1.mp4" type="video/mp4">
+            您的浏览器不支持HTML5视频播放，请更新浏览器。
+        </video>
+        <a href="1.mp4" class="download-btn" download="1.mp4">下载视频1</a>
+    </div>
+
+    <!-- 第二个视频 -->
+    <div class="video-container">
+        <div class="video-title">视频 2：2.mp4</div>
+        <video controls>
+            <source src="2.mp4" type="video/mp4">
+            您的浏览器不支持HTML5视频播放，请更新浏览器。
+        </video>
+        <a href="2.mp4" class="download-btn" download="2.mp4">下载视频2</a>
+    </div>
+</body>
+</html>
